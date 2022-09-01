@@ -38,11 +38,24 @@ class Bd {
         localStorage.setItem(id, JSON.stringify(despesa))
         localStorage.setItem('id', id)
 
-
     }
 
     recuperarDespesa(){
-        console.log("estou aqui ")
+       let id = localStorage.getItem('id')
+       let despesas= Array()
+
+       for(let i =1; i<=id; i++){
+
+         let despesa =JSON.parse(localStorage.getItem(i))
+         despesas.push(despesa)
+         
+       if(despesa === null){
+        continue
+       }
+
+       }
+
+    return despesas 
     }
 
 }
@@ -81,14 +94,12 @@ function cadastarDespesa() {
         $('#modal_dinamico').modal('show')
     }
 
-
-  
-
-
-
 }
 
 function carregaLista(){
-    bd.recuperarDespesa()
+   let despesas = Array()
+   despesas =bd.recuperarDespesa()
+
+   console.log(despesas)
   }
   
