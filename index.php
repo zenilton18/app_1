@@ -46,10 +46,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Cadastro</a>
+            <a class="nav-link" href="index.php">Cadastro</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="consulta.html">Consulta</a>
+            <a class="nav-link" href="consulta.php">Consulta</a>
           </li>
         </ul>
 
@@ -57,7 +57,7 @@
     </div>
   </nav>
 
-  <div class="container">
+  <div class="container" id="cadastro">
     <div class="row">
       <div class="col mb-5">
         <h1 class="display-4">Registro de nova despesa</h1>

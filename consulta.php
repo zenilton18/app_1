@@ -35,10 +35,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Cadastro</a>
+              <a class="nav-link" href="index.php">Cadastro</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="consulta.html">Consulta</a>
+              <a class="nav-link" href="consulta.php">Consulta</a>
             </li>
           </ul>
           
@@ -89,7 +89,7 @@
 
         <div class="col-md-6">
           <select class="form-control" id="tipo">
-            <option>Tipo</option>
+            <option value="">Tipo</option>
             <option value="1">Alimentação</option>
             <option value="2">Educação</option>
             <option value="3">Lazer</option>
@@ -109,7 +109,7 @@
         </div>
 
         <div class="col-md-2 d-flex justify-content-end">
-          <button type="button" class="btn btn-primary">
+          <button type="button" class="btn btn-primary" onclick="pesquisardespesa()">
             <i class="fas fa-search"></i>
           </button>
         </div>
@@ -117,7 +117,7 @@
 
       <div class="row">
         <div class="col">
-          <table class="table" >
+          <table class="table"  >
             <thead>
               <tr>
                 <th>Data</th>
@@ -128,7 +128,7 @@
               </tr>
             </thead>
 
-            <tbody>
+            <tbody id="listar">
             </tbody>
           </table>
         </div>
